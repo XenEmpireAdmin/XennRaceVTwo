@@ -15,8 +15,29 @@
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
+  
+  
+  <ThingDef Name="XennApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
 		
-		
+			<ThingDef Name="XennHatMakeableBase" ParentName="XennApparelMakeableBase" Abstract="True">
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+	</ThingDef>
+	
+	
 	<ThingDef ParentName="XennArmorMakeableBase">
     <defName>Xenn_Armored_DusterXX</defName>
     <label>Xenn armor with duster</label>
@@ -181,6 +202,62 @@
     </tags>
     </apparel>
   </ThingDef>
+  
+  
+  
+<ThingDef ParentName="XennHatMakeableBase">
+		<defName>XennSunglasses</defName>
+		<label>Xenn sunglasses</label>
+		<description>Hey man. Nice glasses.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>ImperialSoldiers/Helmet/OfficerHatB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<WorkToMake>500</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
+			<ArmorRating_Electric>0.2</ArmorRating_Electric>
+			<Insulation_Cold>-24</Insulation_Cold>
+			<Insulation_Heat>20</Insulation_Heat>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<equippedStatOffsets>
+			<ShootingAccuracy>0.02</ShootingAccuracy>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+			<MoveSpeed>0.01</MoveSpeed>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
+			<MeleeHitChance>0.02</MeleeHitChance>
+			<AimingDelayFactor>-0.01</AimingDelayFactor>
+			<RecruitPrisonerChance>0.01</RecruitPrisonerChance>
+			<SocialImpact>0.05</SocialImpact>
+			<TradePriceImprovement>0.02</TradePriceImprovement>
+			<WorkSpeedGlobal>0.02</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<worngraphicPath>XennArmor/Coolguy/CoolGlasses</worngraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<commonality>1</commonality>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+				  <tags>
+      <li>XennMilitary</li>
+      <li>XennSoldier</li>
+    </tags>
+		</apparel>
+	</ThingDef>
 	
 	
 </ThingDefs>

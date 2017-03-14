@@ -35,8 +35,8 @@
       <max>900</max>
     </apparelMoney>
     <weaponMoney>
-      <min>0</min>
-      <max>250</max>
+      <min>1400</min>
+      <max>2500</max>
     </weaponMoney>
     <weaponTags>
       <li>Gun</li>
@@ -111,11 +111,11 @@
       <max>1.8</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>300</min>
+      <min>700</min>
       <max>9000</max>
     </apparelMoney>
     <weaponMoney>
-      <min>200</min>
+      <min>1400</min>
       <max>38000</max>
     </weaponMoney>
     <weaponTags>
@@ -165,7 +165,7 @@
       <max>5800</max>
     </apparelMoney>
     <weaponMoney>
-      <min>400</min>
+      <min>1400</min>
       <max>20000</max>
     </weaponMoney>
     <weaponTags>
@@ -224,7 +224,7 @@
       <max>25000</max>
     </apparelMoney>
     <weaponMoney>
-      <min>1200</min>
+      <min>1400</min>
       <max>28000</max>
     </weaponMoney>
     <weaponTags>
@@ -284,7 +284,7 @@
       <max>26000</max>
     </apparelMoney>
     <weaponMoney>
-      <min>1200</min>
+      <min>1400</min>
       <max>28000</max>
     </weaponMoney>
     <weaponTags>
