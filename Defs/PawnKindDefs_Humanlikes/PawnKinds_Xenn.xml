@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+  <!-- ============================ Xenn Base ========================== -->
+
+  <PawnKindDef Name="XennBase" Abstract="True">
+    <defaultFactionType>XennEmpire</defaultFactionType>
+    <race>Alien_Xenn</race>
+	<backstoryCategory>XennBackstory</backstoryCategory>
+    <chemicalAddictionChance>0.005</chemicalAddictionChance>
+    <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
+    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <apparelTags>
+      <li>Outlander</li>
+	  <li>XennSoldier</li>
+    </apparelTags>
+	 <weaponTags>
+	  <li>XennRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Xenn Civilian Base ========================== -->
+
+  <PawnKindDef Name="XennCivBase" ParentName="XennBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_Xenn</race>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>0</min>
+      <max>250</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+      <li>Melee</li>
+	  <li>XennRifle</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Xenn Civilians ========================== -->
+  
+  <PawnKindDef ParentName="XennCivBase">
+    <defName>XennColonist</defName>
+    <label>colonist</label>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="XennCivBase">
+    <defName>XennPackLeader</defName>
+    <label>pack leader</label>
+    <labelPlural>pack leaders</labelPlural>
+    <factionLeader>true</factionLeader>
+	<minGenerationAge>39</minGenerationAge>
+	<maxGenerationAge>900</maxGenerationAge>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="XennCivBase">
+    <defName>XennTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+  </PawnKindDef>
+  
+
+  
+  <!-- ============================ Xenn Security ========================== -->
+  
+  <PawnKindDef ParentName="XennCivBase">
+    <defName>XennSecurityGuard</defName>
+    <label>security guard</label>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>100</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>9000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>200</min>
+      <max>38000</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>XennRifle</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>5000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.20</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+ 
+  <!-- ============================ Xenn Military Base ========================== -->
+  
+  <PawnKindDef Name="XennMilBase" ParentName="XennBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+	<race>Alien_Xenn</race>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+	<minGenerationAge>19</minGenerationAge>
+    <maxGenerationAge>250</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Outlander</li>
+      <li>Military</li>
+	  <li>XennSoldier</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>5800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>400</min>
+      <max>20000</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>XennRifle</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>15000</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>Medicine</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Xenn Military ========================== -->
+  
+  <PawnKindDef ParentName="XennMilBase">
+    <defName>XennRecruit</defName>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="XennMilBase">
+    <defName>XennHunter</defName>
+    <label>hunter</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>19</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Outlander</li>
+      <li>Military</li>
+	  <li>XennSoldier</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>25000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1200</min>
+      <max>28000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>SniperRifle</li>
+	  <li>XennRifle</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>15000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.73</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>Medicine</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+
+  <PawnKindDef ParentName="XennMilBase">
+    <defName>XennCommando</defName>
+    <label>commando</label>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Outlander</li>
+      <li>Military</li>
+	  <li>XennSoldier</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>26000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1200</min>
+      <max>28000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+	  <li>XennRifle</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>30000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.88</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>180</min>
+            <max>400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>Medicine</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef ParentName="XennMilBase">
+     <defName>XennCommandoElite</defName>
+    <label>elite commando</label>
+    <combatPower>220</combatPower>
+    <minGenerationAge>26</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Military</li>
+      <li>Spacer</li>
+	  <li>XennSoldier</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>2500</min>
+      <max>42000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1600</min>
+      <max>28000</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>XennRifle</li>
+	  <li>EliteGun</li>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>8000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.80</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>Medicine</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+
+</PawnKindDefs>

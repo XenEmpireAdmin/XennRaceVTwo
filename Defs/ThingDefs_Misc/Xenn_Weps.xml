@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+  <ThingDef Name="BaseXennGun" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_WeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="BaseXennMakeableGun" ParentName="BaseXennGun" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_FlameX</defName>
+    <label>kinetic canister</label>
+    <graphicData>
+      <texPath>Projectile/XFBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+</graphicData>
+    <projectile>
+	<flyOverhead>False</flyOverhead>
+	<damageDef>Flame</damageDef>
+	<damageAmountBase>8</damageAmountBase>
+	<speed>105</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseXennMakeableGun">
+    <defName>XennBurnCannon</defName>
+    <label>Xenn burn cannon</label>
+    <description>This weapon fires high velocity plasma at it's target, melting through conventional armor and igniting it's target. A dangerous weapon indeed.</description>
+    <graphicData>
+      <texPath>Things/Guns/Xenngunred</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>KineticTech</researchPrerequisite>
+    </recipeMaker>
+    <equippedStatOffsets>
+      <MoveSpeed>0.65</MoveSpeed>
+    </equippedStatOffsets>
+    <statBases>
+      <Mass>6.85</Mass>
+      <WorkToMake>65800</WorkToMake>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.99</AccuracyMedium>
+      <AccuracyLong>0.99</AccuracyLong>
+      <RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>125</Steel>
+      <Plasteel>55</Plasteel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_FlameX</projectileDef>
+        <warmupTime>0.93</warmupTime>
+        <range>65</range>
+        <soundCast>Xenngun</soundCast>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+       <li>MedievalShields_ValidSidearm</li>
+	   <li>XennRifle</li>
+    </weaponTags>
+  </ThingDef>
+   
+   
+   
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_XenX</defName>
+    <label>cryo burst</label>
+    <graphicData>
+      <texPath>Projectile/XIceBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+</graphicData>
+    <projectile>
+	<flyOverhead>False</flyOverhead>
+	<damageDef>Frostbite</damageDef>
+	<damageAmountBase>8</damageAmountBase>
+	<speed>135</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseXennMakeableGun">
+    <defName>XennFrostCannon</defName>
+    <label>Xenn Frost Cannon</label>
+    <description>The "Arctic Wind" hypothermic discharge weapon is somewhat of a mystery.</description>
+    <graphicData>
+      <texPath>Things/Guns/Xenngunblue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <Mass>6.85</Mass>
+      <WorkToMake>65800</WorkToMake>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.79</AccuracyMedium>
+      <AccuracyLong>0.69</AccuracyLong>
+      <RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>125</Steel>
+      <Plasteel>55</Plasteel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_XenX</projectileDef>
+        <warmupTime>0.63</warmupTime>
+        <range>45</range>
+        <soundCast>Xenngun</soundCast>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+       <li>MedievalShields_ValidSidearm</li>
+	   <li>XennRifle</li>
+    </weaponTags>
+  </ThingDef>
+  
+ </ThingDefs> 

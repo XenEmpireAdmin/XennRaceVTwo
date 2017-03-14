@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+  <PawnKindDef Abstract="True" Name="BaseXennPawnKind">
+    <race>Alien_Xenn</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseXennPawnKind">
+    <defName>Xenn</defName>
+    <label>colonist</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <backstoryCategory>XennBackstory</backstoryCategory>
+    <apparelTags>
+      <li>Spacer</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</PawnKindDefs>

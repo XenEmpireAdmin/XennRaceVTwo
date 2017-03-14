@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+	<BodyPartDef>
+   	 <defName>Tail</defName>
+   	 <label>tail</label>
+   	 <hitPoints>15</hitPoints>
+   	 <frostbiteVulnerability>8</frostbiteVulnerability>
+   	 <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+   	 <spawnThingOnRemoved>Tail</spawnThingOnRemoved>
+   	 <skinCovered>true</skinCovered>
+         <beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+
+	   <ThingDef ParentName="BodyPartNaturalBase">
+      <defName>Tail</defName>
+      <label>tail</label>
+      <description>A tail.</description>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/Organ</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>200</MarketValue>
+      </statBases>
+   </ThingDef>
+	
+	
+</Defs>

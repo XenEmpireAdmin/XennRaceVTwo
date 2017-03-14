@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="XennFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="XennFactionBase">
+    <defName>XennPlayerColony</defName>
+    <label>Xenn Empire</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Xenn</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <homeIconPath>World/XennBaseIcon</homeIconPath>
+    <expandingIconTexture>World/XennBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>XennHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+
+  </FactionDef>
+  
+    <FactionDef Parent="XennFactionBase">
+    <defName>XennPlayerColonyTribal</defName>
+    <label>Xenn Empire Tribal-like</label>
+    <description>Xenn semi-tribal start. (No research done, but high tech level)</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Xenn</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <homeIconPath>World/XennBaseIcon</homeIconPath>
+    <expandingIconTexture>World/XennBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>XennHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+
+</Defs>

@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.BackstoryDef>
+    <defName>XennPraetor</defName>
+    <title>Praetor</title>
+	<titleShort>Praetor</titleShort>
+    <baseDescription>NAME was born in an ancient monastery devoted to martial arts. HECAP was raised to master various forms of physical combat and extend his physical limitations.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Growing</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+        <li>
+            <defname>Beauty</defname>
+            <degree>2</degree>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defname>Kind</defname>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defname>Psychopath</defname>
+        </li>
+    </forcedTraits>
+    <workDisables>
+        <li>Artistic</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+    <defName>XennBullykid</defName>
+    <title>Bully</title>
+	<titleShort>Bully</titleShort>
+    <baseDescription>NAME grew faster than HIS young peers, and took advantage of the fact. HECAP was often found bullying the other kids. HECAP grew out of it... mostly, but was left a bit socially stunted as a result.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Growing</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+        <li>
+            <defname>Psychopath</defname>
+        </li>
+    </forcedTraits>
+    <workDisables>
+        <li>Social</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+    <defName>XennEngineer</defName>
+    <title>Artificis</title>
+	<titleShort>Artificis</titleShort>
+    <baseDescription>In the core planets of the Xenn Empire, those with a natural talent for building and architecture are put into the Aedificarem, a school and training program established to produce fine architects. NAME spent HIS childhood learning about various building materials, architecture, and the societies that employed them.</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+	        <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+        <li>
+            <defname>Beauty</defname>
+            <degree>2</degree>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defname>Kind</defname>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>XennEngineer</defName>
+    <title>Naturae</title>
+	<titleShort>Naturae</titleShort>
+    <baseDescription>In the core planets of the Xenn Empire, those with a natural talent for Science are put into the Laboratorium, the premiere scientific institute of the Xenn Empire. NAME spent HIS childhood learning all the scientific disciplines and methods, with a heavy focus on biology and ecology.</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Research</defName>
+        <amount>6</amount>
+      </li>
+	        <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+        <li>
+            <defname>Beauty</defname>
+            <degree>2</degree>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defname>Kind</defname>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>XennArtkid</defName>
+    <title>Natural artist</title>
+	<titleShort>Artist</titleShort>
+    <baseDescription>NAME was always doodling or sculpting, and HIS talent quickly flowered into a great natural ability for art, winning prizes at many regional "young artist's" exhibits. </baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>6</amount>
+      </li>
+	        <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+        <li>
+            <defname>Beauty</defname>
+            <degree>2</degree>
+            <chance>50</chance>
+        </li>
+        <li>
+            <defname>Kind</defname>
+            <chance>50</chance>
+        </li>
+    </forcedTraits>
+</AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>XennSpacer</defName>
+    <title>Spacer xenn</title>
+    <titleShort>Spacerx</titleShort>
+    <baseDescription>NAME was born on the family's moving home - a sublight long-haul cargo cruiser. HECAP grew up learning to wheel, deal, and steal ("only when necessary!" said pop) enough to keep the ship in spaceworthy condition and delivering cargo on schedule.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+      <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+    <skillGains>
+          <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    </AlienRace.BackstoryDef>
+	
+	    <AlienRace.BackstoryDef>
+    <defName>XennFire</defName>
+    <title>Alien fire survivor</title>
+    <titleShort>Pyrophobe</titleShort>
+    <baseDescription>Rescued from the edge of a forest fire, NAME was taken in and raised by an old farmer and his wife. Though HECAP never got the hang of farming, HIS great strength was a life-saver for the elderly Kents...</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+      <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+    <skillGains>
+          <li>
+        <defName>Growing</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+        <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+	   <workDisables>
+        <li>Firefighting</li>
+	   </workDisables>
+    </AlienRace.BackstoryDef>
+  
+  
+    <AlienRace.BackstoryDef>
+    <defName>XennColonyKid</defName>
+    <title>Xenn colony kid</title>
+    <titleShort>Kid</titleShort>
+    <baseDescription>NAME was born in a small trading post on the outer rims of the Xenn Empire. HECAP had to learn to carry HIS weight and keep the colony running from an early age.</baseDescription>
+    <slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Growing</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+    <AlienRace.BackstoryDef>
+
+    <defName>XennCoreKid</defName>
+    <title>Xenn corekid</title>
+    <titleShort>Corekid</titleShort>
+    <baseDescription>NAME was born on one of the core ecumenopolis in the Xenn Empire. HECAP grew up in one of the many arcologies, spending much of HIS time in the upper-level arboretums.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Growing</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>  
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  
+  <!-- ====== Adult Stories - not porn ====== -->
+  
+  
+  
+    <AlienRace.BackstoryDef>
+    <defName>XennToymaker</defName>
+    <title>Toymaker</title>
+    <titleShort>Toymaker</titleShort>
+    <baseDescription>NAME found HECAP had a natural talent for making delicate items such as small gears, and inscribing beautiful designs. HECAP has made a name as an accomplished toymaker.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>  
+  </AlienRace.BackstoryDef>
+  
+    <AlienRace.BackstoryDef>
+
+    <defName>XennBiogen</defName>
+    <title>Geneticist</title>
+    <titleShort>Geneticist</titleShort>
+    <baseDescription>NAME is a bio-researcher for the Xenn Empire. HECAP has dedicated HIS life to unravelling the genome and improving HIS race... FOR SCIENCE!!!</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Research</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+    <AlienRace.BackstoryDef>
+    <defName>XennHunterBS</defName>
+    <title>Xenn hunter</title>
+    <titleShort>Hunter</titleShort>
+    <baseDescription>NAME is a professional hunter. Sometimes called to put down manhunters, or guide rich dentists on Safari, HIS skills as a tracker are only matched by HIS skill at handling.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+    <AlienRace.BackstoryDef>
+    <defName>XennTrailblazer</defName>
+    <title>Trail blazer</title>
+    <titleShort>Blazer</titleShort>
+    <baseDescription>NAME is at the forefront of the effort to expand the Xenn Empire - rushing headlong into the unknown to colonize uncharted worlds and eke out a living.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Growing</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  
+     <AlienRace.BackstoryDef>
+    <defName>XennClerk</defName>
+    <title>Desk clerk</title>
+    <titleShort>Clerk</titleShort>
+    <baseDescription>NAME was a clerk in an office, filing paperwork, submitting reports. During HIS downtime, HECAP would read and study various subjects on the global network through his workstation terminal. This left HIM with an unquenchable thirst for knowledge.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Research</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>XennDoctor</defName>
+    <title>Xenn doctor</title>
+    <titleShort>Doctor</titleShort>
+    <baseDescription>NAME has taken an oath to devote HIS life to healing others.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+    <AlienRace.BackstoryDef>
+    <defName>XennChef</defName>
+    <title>Xenn saucier</title>
+    <titleShort>Saucier</titleShort>
+    <baseDescription>NAME is a saucier, a master chef who specializes in sauces, stews, hot hors d'œuvres, and sautés. HECAP has helped prepare meals for some of the highest functionaries in Xenn society.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+    <defName>XennPackLead</defName>
+    <title>Xenn pack alpha</title>
+    <titleShort>Alpha</titleShort>
+    <baseDescription>NAME bears the burden of leadership among his community. Xenn often form tight-knit tribal groups, centered around an Alpha- who is generally the most fit, capable, and wise among the group. \nAmong HIS peers, NAME is that leader.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Research</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	 <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+    <defName>PrivateXenn</defName>
+    <title>Army private</title>
+    <titleShort>Private</titleShort>
+    <baseDescription>NAME is a rank-and-file soldier for the Xenn Empire. HECAP had served HIS term of service without incident.... until now.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+    <AlienRace.BackstoryDef>
+    <defName>MajorXenn</defName>
+    <title>Army major</title>
+    <titleShort>Major</titleShort>
+    <baseDescription>NAME is an officer for the Xenn Empire's army. HECAP is responsible for the soldiers under HIS command, and takes that duty seriously.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains> 
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+    <defName>XennSpacerAdult</defName>
+    <title>Space trader</title>
+    <titleShort>Spacer</titleShort>
+    <baseDescription>NAME was a free-trader, roving the Xenn Empire and it's neighbors space searching for deals and opportunities for profit. Until now, HE was flying a ship, making deals with colonies like these... I wonder what happened?</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+	    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+      <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+    <skillGains>
+          <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    </AlienRace.BackstoryDef>
+	
+	  <AlienRace.BackstoryDef>
+    <defName>XennManhunter</defName>
+    <title>Space cowboy</title>
+    <titleShort>Cowboy</titleShort>
+    <baseDescription>NAME is something of a bounty hunter, often called "cowboys" in the Xenn Empire. Historians claim that this moniker comes from the an ancient entertainment program that took the empire by storm, rather than Earth's "old west".\nHistory aside, NAME is not to be taken lightly... or at all.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+    <AlienRace.BackstoryDef>
+    <defName>XennProgrammer</defName>
+    <title>Xenn computer programmer</title>
+    <titleShort>Programmer</titleShort>
+    <baseDescription>NAME has spent many sleepless nights hammering away at a console (not literally with a hammer - though sometimes HECAP wanted to). This allowed HIM to fund HIS second passion... Firearms. HECAP would vent HIS frustrations at the shooting range as often as HECAP could.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Research</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+ 
+</Defs>

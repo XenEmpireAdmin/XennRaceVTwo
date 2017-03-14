@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NameMakerDefs>
+
+  <RulePackDef>
+    <defName>NamerPersonXenn</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[Xennfirst] [Xennlast]</li>
+        <li>name->[badassx] [Xennfirst]</li>
+        <li>name->[Xennfirst] '[badassx]' [Xennlast]</li>
+        <li>name->[Xennfirst] '[Xennlast]' [roman]</li>
+        <li>name->[Xennfirst] '[color]' [Xennlast]</li>
+        <li>name->[Xennfirst] [badassx]</li>
+
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Xennfirst</keyword>
+          <path>Xenn_Names/Xenn</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Xennlast</keyword>
+          <path>Xenn_Names/Xennlast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badassx</keyword>
+          <path>Xenn_Names/Concepts_Xen</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>roman</keyword>
+          <path>Words/Misc/Numbers_SmallRoman</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>color</keyword>
+          <path>Words/Nouns/Colors</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</NameMakerDefs>
