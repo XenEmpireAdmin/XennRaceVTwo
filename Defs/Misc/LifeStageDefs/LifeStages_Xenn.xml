@@ -2,7 +2,7 @@
 <Defs>
   
   <LifeStageDef>
-    <defName>BabyStage</defName>
+    <defName>BabyStageXenn</defName>
     <label>baby</label>
     <bodySizeFactor>0.2</bodySizeFactor>
     <healthScaleFactor>0.2</healthScaleFactor>
@@ -14,7 +14,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>ChildStage</defName>
+    <defName>ChildStageXenn</defName>
     <label>child</label>
     <bodySizeFactor>0.5</bodySizeFactor>
     <healthScaleFactor>0.5</healthScaleFactor>
@@ -26,22 +26,22 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>AdultStage</defName>
-    <label>adult stage</label>
+    <defName>AdultStageXenn</defName>
+    <label>adult StageXenn</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>ElderStage</defName>
-    <label>elder stage</label>
+    <defName>ElderStageXenn</defName>
+    <label>elder StageXenn</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
   </LifeStageDef>
   
   <LifeStageDef>
-    <defName>AncestorStage</defName>
-    <label>ancestor stage</label>
+    <defName>AncestorStageXenn</defName>
+    <label>ancestor StageXenn</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
   </LifeStageDef>

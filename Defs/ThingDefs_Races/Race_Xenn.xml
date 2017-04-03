@@ -30,7 +30,7 @@
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_Xenn</defName>
     <label>xenn</label>
-    <description>A mysterious lupine race, known for reverse-engineering technology from otehr races.</description>
+    <description>A mysterious lupine race, known for reverse-engineering technology from other races.</description>
     <alienRace>
         <generalSettings>
             <MaleGenderProbability>0.5</MaleGenderProbability>
@@ -136,11 +136,6 @@
             <li>
                 <head>Things/Xenn/Heads/</head>
 				<Tail>Things/Xenn/Tails/TailX</Tail>
-            </li>
-            <li>
-                <lifeStageDefs>
-                    <li>HumanlikeAdult</li>
-                </lifeStageDefs>
             </li>
         </graphicPaths>
         <hairSettings>
@@ -277,24 +272,24 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>BabyStage</def>
+          <def>BabyStageXenn</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>ChildStage</def>
+          <def>ChildStageXenn</def>
           <minAge>4</minAge>
         </li>
         <li>
-          <def>AdultStage</def>
+          <def>AdultStageXenn</def>
           <minAge>16</minAge>
         </li>
         <li>
-          <def>ElderStage</def>
-          <minAge>50</minAge>
+          <def>ElderStageXenn</def>
+          <minAge>250</minAge>
         </li>
         <li>
-          <def>AncestorStage</def>
-          <minAge>150</minAge>
+          <def>AncestorStageXenn</def>
+          <minAge>1000</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -318,7 +313,7 @@
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
-        <li>OrganicStandard</li>
+        <li>OrganicAgeless</li>
       </hediffGiverSets>
     </race>
     <recipes>

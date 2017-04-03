@@ -14,6 +14,10 @@
 						<clipPath>Guns/XennGun</clipPath>
 					</li>
 				</grains>
+		<volumeRange>
+          <min>50.58823</min>
+          <max>50.58823</max>
+        </volumeRange>
 				<pitchRange>
 					<min>0.9152174</min>
 					<max>1.042391</max>

@@ -37,9 +37,6 @@
             <defname>Kind</defname>
             <chance>50</chance>
         </li>
-        <li>
-            <defname>Psychopath</defname>
-        </li>
     </forcedTraits>
     <workDisables>
         <li>Artistic</li>
@@ -85,7 +82,7 @@
 
 
 <AlienRace.BackstoryDef>
-    <defName>XennEngineer</defName>
+    <defName>XennArtificis</defName>
     <title>Artificis</title>
 	<titleShort>Artificis</titleShort>
     <baseDescription>In the core planets of the Xenn Empire, those with a natural talent for building and architecture are put into the Aedificarem, a school and training program established to produce fine architects. NAME spent HIS childhood learning about various building materials, architecture, and the societies that employed them.</baseDescription>
@@ -117,6 +114,30 @@
             <chance>50</chance>
         </li>
     </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>XennArtificisAdult</defName>
+    <title>Artifis</title>
+	<titleShort>Artifis</titleShort>
+    <baseDescription>In the core planets of the Xenn Empire, those with a natural talent for building and architecture are put into the Aedificarem, a school and training program established to produce fine architects. When they graduate, they are given the title of "Artifis", and are among the finest builders and Architects to be found.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>8</amount>
+      </li>
+	        <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -152,6 +173,34 @@
             <chance>50</chance>
         </li>
     </forcedTraits>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>XennEngineerAdult</defName>
+    <title>Scientis</title>
+	<titleShort>Scientis</titleShort>
+    <baseDescription>In the core planets of the Xenn Empire, those with a natural talent for Science are put into the Laboratorium, the premiere scientific institute of the Xenn Empire. Their graduates are known as "Scientis". Their scientific acumen is unmatched.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Research</defName>
+        <amount>8</amount>
+      </li>
+	   <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+	  	   <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -252,7 +301,7 @@
   
     <AlienRace.BackstoryDef>
     <defName>XennColonyKid</defName>
-    <title>Xenn colony kid</title>
+    <title>Xenn colonykid</title>
     <titleShort>Kid</titleShort>
     <baseDescription>NAME was born in a small trading post on the outer rims of the Xenn Empire. HECAP had to learn to carry HIS weight and keep the colony running from an early age.</baseDescription>
     <slot>Childhood</slot>
@@ -302,6 +351,28 @@
     </spawnCategories>
   </AlienRace.BackstoryDef>
   
+      <AlienRace.BackstoryDef>
+
+    <defName>XennDigKid</defName>
+    <title>Xenn digger-kid</title>
+    <titleShort>Diggerkid</titleShort>
+    <baseDescription>NAME was always playing in the sandbox, or building in the mud, or otherwise finding excuses to make holes in the ground.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Growing</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>  
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
   
   <!-- ====== Adult Stories - not porn ====== -->
   
@@ -326,6 +397,59 @@
       <li>
         <defName>Crafting</defName>
         <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>  
+  </AlienRace.BackstoryDef>
+  
+      <AlienRace.BackstoryDef>
+    <defName>XennSexSlave</defName>
+    <title>Sex slave</title>
+    <titleShort>Sextoy</titleShort>
+    <baseDescription>NAME was captured by slavers and sold into sexual slavery. HECAP was forced to tend the gardens, and do all sorts of lewd acts for HIS 'owner', but grew accustomed to the otherwise lavish environment, and spoiled as far as labor is concerned.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>Hauling</li>
+	 <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+	   <li>
+        <defName>Growing</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>  
+  </AlienRace.BackstoryDef>
+  
+      <AlienRace.BackstoryDef>
+    <defName>XennLasminer</defName>
+    <title>Xenn lasminer</title>
+    <titleShort>Lasminer</titleShort>
+    <baseDescription>NAME operated a laser-mining rig at an advanced asteroidal mining station, and occasionally operated manual equipment when they'd pumped atmosphere into a particularly rich shaft. HECAP developed a strong back and keen eye with HIS laser-drill.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>6</amount>
       </li>
     </skillGains>
     <spawnCategories>
@@ -381,6 +505,33 @@
       </li>
 	  <li>
         <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  
+  <AlienRace.BackstoryDef>
+    <defName>XennXguanabreed</defName>
+    <title>Xenguana breeder</title>
+    <titleShort>Herpetoculturist</titleShort>
+    <baseDescription>NAME has spent many years breeding reptiles, especially the Xenguana, which requires somewhat special handling due to it's rapid reproductive rate. This experience has given HIM a great deal of insight into certain animal behaviours.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
         <amount>2</amount>
       </li>
     </skillGains>
@@ -634,9 +785,182 @@
     </spawnCategories>
   </AlienRace.BackstoryDef>
   
+  
+  	  <AlienRace.BackstoryDef>
+    <defName>XennTerminator</defName>
+    <title>Terminator</title>
+    <titleShort>Terminator</titleShort>
+    <baseDescription>NAME has travelled through time to assassinate a specific target... HECAP is fond of telling people that HECAP will 'be back'.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  	  <AlienRace.BackstoryDef>
+    <defName>XennCommandoBS</defName>
+    <title>Retired commando</title>
+    <titleShort>Commando</titleShort>
+    <baseDescription>NAME used to be one of the most elite soldiers in the Xenn empire. Now HECAP is retired... though HIS former commander is always trying to get HIM back. Some time ago, HECAP had to rescue a daughter from some druglords. Scary stuff. \n HECAP didn't kill Sully last.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  	  <AlienRace.BackstoryDef>
+    <defName>XennTXRanger</defName>
+    <title>Ranger</title>
+    <titleShort>Ranger</titleShort>
+    <baseDescription>NAME was a 'lawman' in a dusty Rim colony. HIS preference for working alone and constant 'bending' of the rules earned HIM the nickname "Lone Wolf McQuade". HECAP ran afoul of some corrupt military officials running weapons to some drug-lords. Many bullets later, HECAP ended up taking out the mastermind. Stirring the pot so much probably landed them out here...</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>7</amount>
+      </li>
+	   <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+      <AlienRace.BackstoryDef>
+    <defName>XennBarbarian</defName>
+    <title>Xenn barbarian</title>
+    <titleShort>Barbarian</titleShort>
+    <baseDescription>NAME was captured after a battle on a medieval world, and forced to train as a pit-fighter. After crushing HIS enemies, seeing them driven before HIM, and hearing the lamentation of their women, HECAP was released from captivity. HECAP now seems to be seeking 'two snakes' or something?</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+      <AlienRace.BackstoryDef>
+    <defName>XennNavyCook</defName>
+    <title>Navy chef</title>
+    <titleShort>BadassCook</titleShort>
+    <baseDescription>NAME used to be one of the top Space Marines special forces officers. Now HECAP's 'just' a cook... who can kill you nine different ways with just a pinky. \n HECAP sometimes has knife-fights with Tommy-Lee Jones.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+	  	<li>
+        <defName>Cooking</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+    <defName>XennTimeScientist</defName>
+    <title>Xenn temporal-physicist</title>
+    <titleShort>Timedoc</titleShort>
+    <baseDescription>NAME claims to have invented a device that allows HIM to travel through time. Apparently after falling and striking HIS head on the toilet. HECAP keeps muttering something about misplacing a 'Duh-Lorian'- whatever that is.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Research</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
     <AlienRace.BackstoryDef>
     <defName>XennProgrammer</defName>
-    <title>Xenn computer programmer</title>
+    <title>Xenn programmer</title>
     <titleShort>Programmer</titleShort>
     <baseDescription>NAME has spent many sleepless nights hammering away at a console (not literally with a hammer - though sometimes HECAP wanted to). This allowed HIM to fund HIS second passion... Firearms. HECAP would vent HIS frustrations at the shooting range as often as HECAP could.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
@@ -654,6 +978,37 @@
         <defName>Research</defName>
         <amount>4</amount>
       </li>
+    </skillGains>
+    <spawnCategories>
+      <li>XennBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+    
+    <AlienRace.BackstoryDef>
+    <defName>XennDrugLord</defName>
+    <title>Xenn kingpin</title>
+    <titleShort>Kingpin</titleShort>
+    <baseDescription>NAME built a drug empire with brawns, brains, and a fair share of ruthlessness. HECAP made a fortune, which attracted the attention of HIS rivals. They struck HIS base of operation with Police raids, staged by crooked cops on their payroll. Now HECAP is out for revenge...</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+     <li>None</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li> 
     </skillGains>
     <spawnCategories>
       <li>XennBackstory</li>

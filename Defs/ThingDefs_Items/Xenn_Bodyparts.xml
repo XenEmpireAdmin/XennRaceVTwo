@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ThingDefs>
+
+   <ThingDef ParentName="BodyPartNaturalBase">
+      <defName>Tail</defName>
+      <label>tail</label>
+      <description>A tail.</description>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/Organ</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>200</MarketValue>
+      </statBases>
+   </ThingDef>
+
+   <ThingDef ParentName="BodyPartNaturalBase">
+      <defName>XTail</defName>
+      <label>tail</label>
+      <description>A Xenn tail.</description>
+      <graphicData>
+         <texPath>Things/Item/BodyPart/Organ</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <MarketValue>200</MarketValue>
+      </statBases>
+   </ThingDef>
+   
+  <ThingDef ParentName="BodyPartArtificialBase">
+    <defName>BionicXennTail</defName>
+    <label>bionic xenn tail</label>
+    <description>A technical marvel! intricate gyroscopic feedback systems allow increased movement and dexterity! Amazing! Such Wow!</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+	
+	  <ThingDef ParentName="BodyPartArtificialBase">
+    <defName>ClothTail</defName>
+    <label>cloth tail</label>
+    <description>Simple prosthesis made to replace a missing tail. It's better than nothing...</description>
+    <graphicData>
+      <texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <Mass>.3</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+  
+  
+</ThingDefs>

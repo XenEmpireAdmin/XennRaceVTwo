@@ -67,15 +67,16 @@
       <researchPrerequisite>ChargedShot</researchPrerequisite>
     </recipeMaker>
     <equippedStatOffsets>
-      <MoveSpeed>0.65</MoveSpeed>
+      <MoveSpeed>0.15</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
+	  <MarketValue>2200</MarketValue>
       <Mass>6.85</Mass>
       <WorkToMake>65800</WorkToMake>
       <AccuracyTouch>0.95</AccuracyTouch>
       <AccuracyShort>0.95</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
-      <AccuracyLong>0.99</AccuracyLong>
+      <AccuracyMedium>0.89</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
       <RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
     </statBases>
     <costList>
@@ -91,8 +92,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_FlameX</projectileDef>
-        <warmupTime>0.93</warmupTime>
-        <range>65</range>
+        <warmupTime>1.53</warmupTime>
+        <range>40</range>
         <soundCast>Xenngun</soundCast>
         <burstShotCount>5</burstShotCount>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -159,7 +160,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_XenX</projectileDef>
         <warmupTime>0.63</warmupTime>
-        <range>45</range>
+        <range>50</range>
         <soundCast>Xenngun</soundCast>
         <burstShotCount>4</burstShotCount>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>

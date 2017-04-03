@@ -211,7 +211,7 @@
 		<description>Hey man. Nice glasses.</description>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
-			<texPath>ImperialSoldiers/Helmet/OfficerHatB</texPath>
+			<texPath>XennArmor/Coolguy/CoolGlasses</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -222,8 +222,8 @@
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<ArmorRating_Electric>0.2</ArmorRating_Electric>
-			<Insulation_Cold>-24</Insulation_Cold>
-			<Insulation_Heat>20</Insulation_Heat>
+			<Insulation_Cold>-5</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
 		</statBases>
 		<costList>
 			<Steel>20</Steel>

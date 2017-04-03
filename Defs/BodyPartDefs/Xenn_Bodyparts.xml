@@ -12,18 +12,5 @@
          <beautyRelated>true</beautyRelated>
 	</BodyPartDef>
 
-	   <ThingDef ParentName="BodyPartNaturalBase">
-      <defName>Tail</defName>
-      <label>tail</label>
-      <description>A tail.</description>
-      <graphicData>
-         <texPath>Things/Item/BodyPart/Organ</texPath>
-         <graphicClass>Graphic_Single</graphicClass>
-      </graphicData>
-      <statBases>
-         <MarketValue>200</MarketValue>
-      </statBases>
-   </ThingDef>
-	
-	
+
 </Defs>
